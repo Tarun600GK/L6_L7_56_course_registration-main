@@ -47,7 +47,8 @@ def test_waitlist_invalid_capacity_branch(capacity):
 
 @pytest.mark.parametrize(
     ("days_late", "credits", "waiver", "expected"),
-    [
+    
+    
         (0, 5, False, 0),
         (-1, 5, False, 0),
         (5, 5, True, 0),
