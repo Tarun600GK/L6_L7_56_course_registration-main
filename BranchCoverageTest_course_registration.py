@@ -60,4 +60,5 @@ def test_waitlist_invalid_capacity_branch(capacity):
     ],
 )
 def test_late_fee_decision_outcomes(days_late, credits, waiver, expected):
+    
     assert late_fee(days_late, credits, waiver) == expected
